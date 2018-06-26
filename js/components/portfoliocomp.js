@@ -7,17 +7,17 @@ const portfolioComp = {
   <section class="portfoliosect">
     <div class="portdiv">
       <h2>PokeSquad</h2>
-      <img class="projectimg" src="../../images/pokesquad.png" alt="" ng-click="$ctrl.toPoke();">
+      <img class="projectimg" src="images/pokesquad.png" alt="" ng-click="$ctrl.toPoke();">
       <p class="portp">A fun way to help decide what pokemon you should start your journy with by taking a compatability quiz.</p>
     </div>
     <div class="portdiv">
       <h2>Divvy</h2>
-      <img class="projectimg" src="../../images/divvy.png" alt="" ng-click="$ctrl.toDivvy();">
+      <img class="projectimg" src="images/divvy.png" alt="" ng-click="$ctrl.toDivvy();">
       <p class="portp">A budgeting application to keep track of weekly budget and spending habits.</p>
     </div>
     <div class="portdiv">
       <h2>Cool Flix</h2>
-      <img class="projectimg" src="../../images/coolflix.png" alt="" ng-click="$ctrl.toMovie();">
+      <img class="projectimg" src="images/coolflix.png" alt="" ng-click="$ctrl.toMovie();">
       <p class="portp">A movie searching platform to find movies by genre, rating, and title. Gives extra information on movies.</p>
     </div>
   </section>
