@@ -14,7 +14,7 @@ const navComp = {
     const vm = this;
     vm.toContact = () => {
       PortfolioService.toContact();
-      // $location.path("/contact-comp")
+      $location.path("/contact-comp")
     };
   }]
 };
