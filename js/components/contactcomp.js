@@ -3,7 +3,7 @@
 const contactComp = {
   template:`
   <nav>
-    <img id="logo" src="../../images/Sundrenchedlogo.png" ng-click="$ctrl.toLanding();">
+    <img id="logo" src="images/Sundrenchedlogo.png" ng-click="$ctrl.toLanding();">
     <button ng-click="$ctrl.toLanding();">X</button>
   </nav>
   <div class="contdiv">

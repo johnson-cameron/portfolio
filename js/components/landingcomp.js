@@ -13,7 +13,7 @@ const landingComp = {
     <p>I want to build elegant applications with a simple, straitforward user experience.</p>
     </div>
     <div>
-      <img id="profileimg" src="../../images/profileimg.jpg" ng-click="$ctrl.toWL();">
+      <img id="profileimg" src="images/profileimg.jpg" ng-click="$ctrl.toWL();">
     </div>
   </section>
   <section class="infosect">
