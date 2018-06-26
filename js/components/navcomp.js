@@ -3,11 +3,14 @@
 const navComp = {
   template:`
   <nav>
-  <img id="logo" src="../../images/Sundrenchedlogo.png" ng-click="$ctrl.toWL();">
-  <button>Say Hi</button>
+    <div class="navdiv">
+    <img id="logo" src="../../images/Sundrenchedlogo.png" ng-click="$ctrl.toWL();">
+    <h1>Cameron Johnson</h1>
+    </div>
+    <button ng-click="$ctrl.toContact();">Say Hi</button>
   </nav>
   `,
-  controller: ["PortfolioService", function(PortfolioService) {
+  controller: ["PortfolioService", "$location", function(PortfolioService, $location) {
     const vm = this;
     vm.search = () => {
       PortfolioService.toSearch();
@@ -15,8 +18,12 @@ const navComp = {
     vm.toWL = () => {
       PortfolioService.toWL();
     };
+    vm.toContact = () => {
+      PortfolioService.toContact();
+      // $location.path("/contact-comp")
+    };
   }]
-}
+};
 
 
 angular

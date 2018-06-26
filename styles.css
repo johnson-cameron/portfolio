@@ -16,8 +16,87 @@ nav{
   padding: 30px;
 }
 
+.contactform button{
+  margin: 30px auto;
+}
+
+h2{
+  text-align: center;
+  padding: 10px;
+  font-size: 32px;
+}
+
+.contactform{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20 auto;
+  padding: 50px;
+  background: whitesmoke;
+  flex-direction: column;
+}
+
+.contdiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20 auto;
+  padding: 50px;
+  background: whitesmoke;
+  flex-direction: column;
+}
+
+.contactdiv{
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 250px;
+  justify-content: center;
+  text-align: center;
+  border: #088294 2px solid;
+  margin: 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 500ms ease-out;
+}
+
+.contactimg{
+  margin: 0 auto;
+  width: 100px;
+  padding-bottom: 20px;
+}
+
+h3{
+  margin: 50px;
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 10px;
+
+}
+
+button{
+  display: flex;
+  width: 100px;
+  height: 50px;
+  padding: 10px;
+  border: #088294 solid 2px;
+  border-radius: 50px;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 500ms ease-out;
+  color: #088294;
+}
+
+button:hover{
+  background-color: #088294;
+  color: whitesmoke;
+}
+
 #logo{
-  margin-right: 10px;
+  margin-left: 10px;
 }
 
 a{
@@ -26,28 +105,164 @@ a{
 
 h1{
   margin-top: 15px;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.portp{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 250px;
 }
 
 #profileimg{
-  max-width: 500px;
-  right: 5px;
+  max-width: 250px;
+  border-radius: 50px;
+  margin: 0 auto;
+
 }
 
 #profiledesc{
   font-size: 22px;
-  width: 50%;
+  width: 90%;
+  margin: 0 auto;
 }
 
 #profilesect{
   display: flex;
-  justify-content: space-between;
-  margin: 80px;
+  text-align: center;
+  /* justify-content: center; */
+  margin: 40px auto;
   background-color: whitesmoke;
   border: 2px solid #BDB531;
   border-radius: 25px;
   padding: 30px;
+  flex-direction: column-reverse;
+  width: 80%;
 }
 
 p{
   margin: 20px;
+}
+
+.infosect{
+  background: whitesmoke;
+  border: #BDB531 2px solid;
+  border-radius: 25px;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.infodiv{
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+ul{
+  list-style: none;
+}
+
+#infoleft{
+}
+
+#inforight{
+  border-top: #7d7d7dd0 solid 1px;
+  margin: 0;
+}
+
+.portfoliosect{
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  margin: 20px;
+  padding: 20px;
+  color: whitesmoke;
+}
+.portdiv{
+  margin: 0 auto;
+}
+.contactdiv:hover{
+  background-color: #088294;
+  color: whitesmoke;
+  border: #BDB531 2px solid;
+
+}
+
+.overlay {
+  position: absolute;
+  top: 50px;
+  bottom: 150px;
+  /* left: 300px;
+  right: ; */
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 139, 186, 0.605);
+}
+
+/* .overlay:hover{
+  opacity: 100;
+  color: purple;
+}  */
+
+.projectimg{
+  width: 300px;
+  cursor: pointer;
+  border-radius: 20px;
+  border: #BDB531 solid 2px;
+}
+
+.projectimg:hover{
+  box-shadow: 0px 0px 69px -2px rgba(189,181,49,1);
+}
+
+@media only screen and (min-width: 900px) {
+  .contactform{
+    justify-content: center;
+    align-items: center;
+    margin: 20 auto;
+    padding: 50px;
+    background: whitesmoke;
+    flex-direction: row;
+  }
+  .infosect{
+    background: whitesmoke;
+    border: #BDB531 2px solid;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+  }
+  
+  .infodiv{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    justify-content: space-around;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 50px;
+
+  }
+  
+  #infoleft{
+    margin: 0 auto;
+    width: 50%;
+  }
+  
+  #inforight{
+    border-left: #7d7d7dd0 solid 1px;
+    margin: 0 auto;
+    width: 50%;
+  }
+  
 }

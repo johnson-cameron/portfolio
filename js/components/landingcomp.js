@@ -2,6 +2,13 @@
 
 const landingComp = {
   template:`
+  <nav>
+    <div class="navdiv">
+    <img id="logo" src="../../images/Sundrenchedlogo.png" ng-click="$ctrl.toWL();">
+    </div>
+    <button ng-click="$ctrl.toContact();">Say Hi</button>
+  </nav>
+
   <section id="profilesect">
     <div id="profiledesc">
     <p>My name is Cameron Johnson, I graduated from DePauw University with a degree in Computer science. </p>
@@ -14,16 +21,55 @@ const landingComp = {
       <img id="profileimg" src="../../images/IMG_3151.jpg" ng-click="$ctrl.toWL();">
     </div>
   </section>
+  <section class="infosect">
+    <div class="infodiv" id="infoleft">
+      <img src="" alt="">
+      <h2>Designer</h2>
+      <p>I value a simple, clean design with thoughtful inteactions.</p>
+      <h4>Things I enjoy designing</h4>
+      <p>UX, UI, Web, Mobile, Apps, Logos</p>
+      <h4>Design Tools</h4>
+      <ul>
+        <li>Illustrator</li>
+        <li>Balsamiq Mockups</li>
+        <li>Pen & Paper</li>
+      </ul>
+    </div>
+    <div class="infodiv" id="inforight"><img src="" alt="">
+      <h2>Front-end Developer</h2>
+      <p>I enjoy bringing ideas to life in the browser.</p>
+      <h4>Languages I speak:</h4>
+      <p>HTML5, CSS3, Sass, Angularjs, Jquery, JavaScript</p>
+      <h4>Dev Tools</h4>
+      <ul>
+        <li>VS Code</li>
+        <li>Github</li>
+        <li>Terminal</li>
+      </ul>
+    </div>
+  </section>
   <portfolio-comp></portfolio-comp>
+  <div class="contdiv">
+    <h3>Please reach out with any thoughts, ideas, or questions you may have!</h3>
+    <form class=contactform>
+      <div class="contactdiv"><img class="contactimg" src="images/phone.png" alt="">(313)-443-0476</div>
+      <div class="contactdiv"><img class="contactimg" src="images/email.png" alt="">johnson.cameron.m@gmail.com</div>
+      <div class="contactdiv"><img class="contactimg" src="images/github.png" alt="">Find me on Github</div>
+      <div class="contactdiv"><img class="contactimg" src="images/linkedin.png" alt="">Find me on LinkedIn</div>
+    </form>
+  </div>
   `,
-  controller: ["PortfolioService", function(PortfolioService) {
+  controller: ["$location", function($location) {
     const vm = this;
-    vm.search = () => {
-      PortfolioService.toSearch();
+    
+    vm.toContact = () => {
+      $location.path("/contact-comp");
+      
     };
-    vm.toWL = () => {
-      PortfolioService.toWL();
+    vm.sendInfo = (contact) => {
+      console.log(contact);
     };
+    
   }]
 }
 
