@@ -2,12 +2,7 @@
 
 const landingComp = {
   template:`
-  <nav>
-    <div class="navdiv">
-    <img id="logo" src="../../images/Sundrenchedlogo.png" ng-click="$ctrl.toWL();">
-    </div>
-    <button ng-click="$ctrl.toContact();">Say Hi</button>
-  </nav>
+  <nav-comp></nav-comp>
 
   <section id="profilesect">
     <div id="profiledesc">
@@ -18,7 +13,7 @@ const landingComp = {
     <p>I want to build elegant applications with a simple, straitforward user experience.</p>
     </div>
     <div>
-      <img id="profileimg" src="../../images/IMG_3151.jpg" ng-click="$ctrl.toWL();">
+      <img id="profileimg" src="../../images/profileimg.jpg" ng-click="$ctrl.toWL();">
     </div>
   </section>
   <section class="infosect">
