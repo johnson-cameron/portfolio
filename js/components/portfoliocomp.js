@@ -25,7 +25,7 @@ const portfolioComp = {
   controller: ["$window", function($window) {
     const vm = this;
     vm.toPoke = () => {
-      $window.open('https://johnson-cameron.github.io/pokesquad/');
+      $window.open('https://poke-final.herokuapp.com/#!/start');
     };
     vm.toDivvy = () => {
       $window.open('https://johnson-cameron.github.io/Divvy/');
