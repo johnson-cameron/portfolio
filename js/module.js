@@ -7,7 +7,7 @@ angular
       .when("/landing", {
         template: "<landing-comp></landing-comp>"
       })
-      .when("/contact-comp", {
+      .when("/contact", {
         template: "<contact-comp></contact-comp>"
       })
       .otherwise({redirectTo: "/landing"});

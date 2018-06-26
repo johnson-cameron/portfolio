@@ -4,16 +4,16 @@ const navComp = {
   template:`
   <nav>
     <div class="navdiv">
-    <img id="logo" src="images/sundrenchedlogo.png">
-    <h1>Cameron Johnson</h1>
+      <img id="logo" src="images/sundrenchedlogo.png">
+      <h2 class="name">Cameron Johnson</h2>
     </div>
     <button ng-click="$ctrl.toContact();">Say Hi</button>
   </nav>
   `,
-  controller: ["PortfolioService", "$location", function(PortfolioService, $location) {
+  controller: ["$location", function($location) {
     const vm = this;
     vm.toContact = () => {
-      $location.path("/contact-comp")
+      $location.path("/contact")
     };
   }]
 };
