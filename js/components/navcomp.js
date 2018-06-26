@@ -4,7 +4,7 @@ const navComp = {
   template:`
   <nav>
     <div class="navdiv">
-    <img id="logo" src="./images/sundrenchedlogo.png">
+    <img id="logo" src="../images/sundrenchedlogo.png">
     <h1>Cameron Johnson</h1>
     </div>
     <button ng-click="$ctrl.toContact();">Say Hi</button>
