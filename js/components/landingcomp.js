@@ -2,8 +2,13 @@
 
 const landingComp = {
   template:`
-  <nav-comp></nav-comp>
-
+  <nav>
+    <div class="navdiv">
+      <img id="logo" src="images/sundrenchedlogo.png">
+      <h2 class="name">Cameron Johnson</h2>
+    </div>
+    <button ng-click="$ctrl.toContact();">Say Hi</button>
+  </nav>
   <section id="profilesect">
     <div id="profiledesc">
       <p>My name is Cameron Johnson, I graduated from DePauw University with a degree in Computer science. </p>
