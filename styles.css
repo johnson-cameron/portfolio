@@ -173,11 +173,13 @@ ul{
 }
 
 #infoleft{
+  padding-top: 30px;
 }
 
 #inforight{
   border-top: #7d7d7dd0 solid 1px;
   margin: 0;
+  padding-top: 30px;
 }
 
 .portfoliosect{
@@ -234,6 +236,9 @@ ul{
 }
 
 @media only screen and (min-width: 900px) {
+  body{
+    font-size: 18px;
+  }
   .contactform{
     justify-content: center;
     align-items: center;
@@ -262,6 +267,35 @@ ul{
     padding-bottom: 50px;
 
   }
+
+  #profilesect{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #profiledesc{
+    width: 60%;
+    text-align: left;
+    margin-left: 0;
+    
+  }
+
+  #profileimg{
+    max-width: 400px;
+    border-radius: 100%;
+    margin: auto;
+  }
+  
+  #profilesect{
+    flex-direction: row;
+  }
+
+  #imgdiv{
+    width: 50%;
+    display: flex;
+    align-items: center;
+
+  }
   
   #infoleft{
     margin: 0 auto;
@@ -274,6 +308,13 @@ ul{
     width: 50%;
   }
 
+  .navdiv{
+    display: flex;
+    flex-direction: row;
+  }
   
+  .contdiv{
+    height: 85vh;
+  }
   
 }
