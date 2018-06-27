@@ -63,7 +63,7 @@ const landingComp = {
     const vm = this;
     
     vm.toContact = () => {
-      $location.path("/contact-comp");
+      $location.path("/contact");
       
     };
     vm.sendInfo = (contact) => {
